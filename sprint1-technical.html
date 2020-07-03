@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Stories and Legends (PAGE title) </title>
+    <title>Sprint 1 technical</title>
     <meta charset="UTF-8">
     <link href="styles/main.css" rel="stylesheet" type="text/css">
   <link href=https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@300&display=swap"
@@ -10,6 +10,7 @@
   </head>
   
   <body id="background">
+    <div style="text-align: center;">
     <h1>Sprint 1 technical</h1>
     <h2>A brief overview of Git and Github installation config and use.</h2>
     <h3>jul 3 2020</h3>
@@ -19,7 +20,9 @@
     <p>Knowing the what and the why of version control as a concept is the first step I had to take to learning git. Picture youre working on a word document, and everytime you save the file it creates a new file in a new directory. The benefit of this would be that you always have the opportunity to revert back to a previous file if youve made a mistake you cant easily repair, but the obvious downside is clean file management becomes immediately horribe to deal with. Now picture youre working on the same word document in a team of 10 people. The goal is one finished file, but each of these people colabourating will have been saving their own version of each iteration of the work ever single time. Thats where a version control system comes in. A version control system like git enables users to create a repository, which I liken to a directory AND a timeline of edits and changes (commits) rolled into one. Now every file in the repository can be edited on a seperate branch and merged to the master branch at the users discresion. Whenever these repositories want to be shared, git can push these repositories to a hosted system called Github, where others can download and work on thier own branches without compromising other peoples work, or introducing bugs or glitches in the project.
     </p>
     <br>
-    <img src="pictures/Git-visualised.png" alt="git workflow visualised as tree structure">
+    <div style="text-align: center;">
+      <img src="pictures/Git-visualised.png" alt="git workflow visualised as tree structure">
+    </div>
     <br>
     <em>this picture shows the repository "master" with each circle representing a commit. Using checkout branch to establish "little Feature" and "big feature" whilst keeping "master" intact.</em>
     <h2>Command line basics.</h2>
@@ -36,7 +39,13 @@
     <li>When you are working on a project, the workflow of git requires you to make your changes as needed to the files in the repository, `git add` the files you've changed and `git commit` to snapshot the state of your repository after those changes. `git add` adds the files to what is called the staging index; basically where files/directories are standing by to be committed. Then theres commits. These commits are your tree structure of progress towards your project goals, and each commit contains detailed information viewable in `git log`</li>
     <ul><em>Git log</em></ul>
     <li>`git log` is the command that allows you to view all the commits that have been made to the repository. The log also enables you to use command flags to see detailed information about which user made those commits, what the commit messages are, what files were changed, what changes were made to the files and when. A very useful tool for fault finding.</li>
-    
+
+    <div style="text-align: center;"> 
+      <img src="pictures/command-line.png" alt="A screenshot of my command line" style="height: 30%; width: 30%;">
+    </div>
+    <br>
+    <em>This image shows a screenshot of my command line as I navigate to my working directory, stage all files in that directory for commit, commit (with messages) those files and push to a branch on my origin/remote.</em>
+  </div>
 
       
     
@@ -44,5 +53,9 @@
     <!-- this is a comment. -->
   
   </body>
+  <br>
+  <br>
+  <br>
+
   <footer class=home><a href="index.html" style="color: whitesmoke;"> Take me home</a></footer>
 </html>
