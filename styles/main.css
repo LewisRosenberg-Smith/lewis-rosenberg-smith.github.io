@@ -24,7 +24,7 @@
     border-radius: 10px;
     /* margin: 3px; */
     flex-wrap: wrap;
-    margin: 75px
+    margin: 70px
     
     
 }
@@ -57,7 +57,7 @@
     
 }
 .col-6 {
-    height: 40%;
+    
     width: 50%;
     text-align:center;
     padding: 5%;
@@ -106,8 +106,10 @@ body {
 .rightbox {
     float: right;
 }
-#dog {
+#mypicture {
+    width: 45%;
     max-width: -webkit-fill-available;
+    border-radius: 200px
 }
 .journey {
     text-align: center;
