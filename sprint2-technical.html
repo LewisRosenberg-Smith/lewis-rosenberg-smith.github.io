@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sprint 2 technical</title>
+    <meta charset="UTF-8">
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+  <link href=https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@300&display=swap"
+    rel="stylesheet">
+
+  </head>
+  <body id="background">
+      <div style="text-align: center;">
+          <h1 style="text-decoration: underline;">Sprint 2 Technical.</h1>
+          <h2><em>What are the differences between relative, absolute and fixed positioning?</em></h2>
+          <br>
+          <p>Relative, absolute and fixed positioning are ways we can manipulate elements using the CSS position property. Before we define each, it is important to know that if no positioning value is defined, the element will always default to <code>position-static</code>. Meaning when you define specifically that an element be tagged position static, the positioning outcome will be the same as the <em>default document flow.</em> Remember that term, well come back to it later.
+
+            <h3><ul><em><code>position: relative</code></em></ul></h3>
+            <li><code>position: relative</code> is the command we use to affect the positioning of an element <em>relative to itself</em>; meaning it will move however many pixels, percentages or ems relative to what its <code>position-static</code> value was.</li>
+            <br>
+            <img src="pictures/position-relative.png" alt="positioning the blue box relative to its previous fixed position" style="width: 50%;">
+            <br>
+            <p>We see here that the blue box has been positioned <em>20px away from its previous top and left fixed positions.</em> This is what is meant by relative to itself.</p>
+            <br>
+            <p>Furthermore the space created by moving the element, will remain unfilled by any surrounding elements. Relative positioning can also be used for parent elements to define the relationship of nested child elements with absolute positioning</p>
+            <h3><ul><em><code>position: absolute</em></ul></h3></code>
+            <li>This one is powerful but a little dangerous. <code>position: absolute</code> allows you to position exactly where you want. But there are a few rules to remember. If you set absolute positioning values of height and width your element will position itself relative to the <em>document itself</em> disregarding any element its nested within. 
+            <br>
+             <img src="pictures/absolute-positioning.png" alt="absolute positioning without specified parent positioning" style="width: 72%;">
+             <p>Look for my crudely drawn circles! This picture demonstrates an example (from the wonderful Net Ninja youtube channel) of what happens <em>when you dont specify relative positioning on any parent elements, and you assign an absolute positioning value for h2</em></p>
+             <br>
+             <p>what if we want the h2 in the above example to be nested within the cloud image?</p>
+             <br>
+             <img src="pictures/absolute-positioning-relative.png" alt="absolute positioning with specified relative positioning in the parent element">
+             <p>now with <em>relative positioning specified in the banner image</em> the absolute positioning conforms to the dimentions of the parent element.</p>
+             <br>
+             <p>Defining a parent element and assigning it relative positioning gives absolute positioning its reference. And with that known it can be a very powerful tool to put things exactly where you want them to go. </li></p>
+            <h3><ul><em><code>position: fixed</code></em></ul></h3>
+            <li>This one is like absolute but even more subborn! Position fixed will <em>break document flow</em> again, meaning the space the element once occupied is now fillable by other elements. But unlike absolute positioning, fixed elements do not conform to the relative positioning of parent elements, nor are they effected by scrolling at all. So say for instance you want a banner add on your page to be positioned at exactly 20px from the top and left of your page, no matter what elements it overlaps, and you want it to remain there when the user scrolls, you would want <code>position: fixed</code> on that ad. This can be explained far better in motion so you can see the scrolling in action.</li>
+            <br>
+            <p>this concept is easier to see in motion. Below is a link to a demonstration of fixed positioning in the context of a navigation bar.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8fQWx-d5qc8?start=150" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </p>
+          <br>
+          <p>I hope that was a useful primer on positioning for anyone reading this!</p>
+
+         
+      </div>
+      
+  </body>
+  <footer class=home><a href="index.html" style="color: whitesmoke;"> Take me home</a></footer>
+  </html>
